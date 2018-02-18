@@ -6,7 +6,7 @@ def gcd(a, b):
 
 
 def lcm_efficient(a, b):
-    return int(a * b / gcd(a, b))
+    return a * b // gcd(a, b)
 
 
 a, b = map(int, input().split())
